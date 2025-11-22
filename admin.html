@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>مدیریت رزروها</h2>
+<table>
+<thead><tr><th>آی‌دی</th><th>کاربر</th><th>تاریخ</th><th>ساعت</th><th>وضعیت</th></tr></thead>
+<tbody>
+{% for b in bookings %}
+<tr>
+<td>{{ b.id }}</td>
+<td>{{ b.user.username if b.user else '—' }}</td>
+<td>{{ b.date }}</td>
+<td>{{ b.time }}</td>
+<td>{{ b.status }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endblock %}

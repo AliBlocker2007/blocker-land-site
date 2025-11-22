@@ -1,0 +1,7 @@
+body{font-family: Tahoma, sans-serif; direction: rtl; padding: 20px}
+nav a{margin-left:10px}
+.flashes{list-style:none;padding:0}
+.flashes li{padding:8px;margin-bottom:6px;border-radius:6px}
+.flashes .success{background:#d4edda}
+.flashes .danger{background:#f8d7da}
+.flashes .warning{background:#fff3cd}
